@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "nom": "Von Neuman",
+      "email": "neuman@example.com",
+      "profil": {
+        "age": 28,
+        "ville": "Paris",
+        "membre_actif": true
+      },
+      "cours": [
+        {
+          "id": 101,
+          "titre": "Introduction à Python",
+          "duree_heures": 10,
+          "termine": true
+        },
+        {
+          "id": 102,
+          "titre": "Bases de données SQL",
+          "duree_heures": 8,
+          "termine": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "nom": "Newton Isaac",
+      "email": "isaac@example.com",
+      "profil": {
+        "age": 34,
+        "ville": "Lyon",
+        "membre_actif": false
+      },
+      "cours": [
+        {
+          "id": 103,
+          "titre": "Développement Web avec HTML/CSS",
+          "duree_heures": 6,
+          "termine": true
+        }
+      ]
+    }
+  ]
+}

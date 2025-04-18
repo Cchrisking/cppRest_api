@@ -1,0 +1,3 @@
+/media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/cmake-build-debug/CMakeFiles/crowJourney.dir
+/media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/cmake-build-debug/CMakeFiles/edit_cache.dir
+/media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/cmake-build-debug/CMakeFiles/rebuild_cache.dir

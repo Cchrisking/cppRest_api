@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/book_api_server.dir/src/main.cpp.o -o book_api_server  -Wl,-rpath,/media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/build: libcrowJourney.so /usr/lib/x86_64-linux-gnu/libboost_system.so.1.83.0 

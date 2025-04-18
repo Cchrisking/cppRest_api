@@ -1,0 +1,8 @@
+/media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/build/CMakeFiles/crowJourney.dir
+/media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/build/CMakeFiles/book_api_server.dir
+/media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/build/CMakeFiles/edit_cache.dir
+/media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/build/CMakeFiles/rebuild_cache.dir
+/media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/build/CMakeFiles/list_install_components.dir
+/media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/build/CMakeFiles/install.dir
+/media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/build/CMakeFiles/install/local.dir
+/media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/build/CMakeFiles/install/strip.dir

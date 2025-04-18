@@ -1,0 +1,9 @@
+# ninja log v6
+5671	5792	1744922121626498800	crowJourney	8830f088017fb09d
+1	15	1744931918501967000	build.ninja	284a9d66d3020dce
+3	5749	1744914730517063700	CMakeFiles/crowJourney.dir/main.cpp.o	39be100978bd0059
+0	5671	1744922115955378700	CMakeFiles/crowJourney.dir/src/main.cpp.o	ba8f33b68085aa7e
+3	7600	1744932480813241300	CMakeFiles/crowJourney.dir/src/users.cpp.o	e5ebeb0fdf07f8da
+3	7787	1744932480813241300	CMakeFiles/crowJourney.dir/include/library.h.cpp.o	a0253d1ca4013b10
+3	7307	1744932585901527700	CMakeFiles/crowJourney.dir/src/library.cpp.o	33c781a74014c70e
+2	5762	1744932836772980800	CMakeFiles/crowJourney.dir/src/main.cpp.o	ba8f33b68085aa7e

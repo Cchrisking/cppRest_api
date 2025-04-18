@@ -1,0 +1,4 @@
+/home/christou/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/christou/.local/share/JetBrains/Toolbox/apps/clion/bin/ninja/linux/x64/ninja -G Ninja -S /media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney -B /media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/cmake-build-debug
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/cmake-build-debug
