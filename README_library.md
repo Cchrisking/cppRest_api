@@ -74,9 +74,11 @@ cd book-api
 mkdir build && cd build
 
 # Configurer et compiler
-cmake ..
+cmake -DTARGET_TO_BUILD=book_api_server -B build .
+cd build
 make
-
+#book_api_server
+#user_app
 # Lancer le serveur principal de l’API
 ./book_api_server
 ```
