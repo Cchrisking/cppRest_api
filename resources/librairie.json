@@ -1,0 +1,22 @@
+{
+  "livres": [
+    {
+      "titre": "Le Petit Prince",
+      "auteur": "Antoine de Saint-Exupéry",
+      "annee": 1943,
+      "genre": "Fiction"
+    },
+    {
+      "titre": "L'Étranger",
+      "auteur": "Albert Camus",
+      "annee": 1942,
+      "genre": "Philosophie"
+    },
+    {
+      "titre": "Les Misérables",
+      "auteur": "Victor Hugo",
+      "annee": 1862,
+      "genre": "Roman historique"
+    }
+  ]
+}
