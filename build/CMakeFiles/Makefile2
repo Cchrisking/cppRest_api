@@ -83,7 +83,7 @@ clean: CMakeFiles/book_api_server.dir/clean
 CMakeFiles/crowJourney.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/crowJourney.dir/build.make CMakeFiles/crowJourney.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/crowJourney.dir/build.make CMakeFiles/crowJourney.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/build/CMakeFiles --progress-num=3,4 "Built target crowJourney"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/build/CMakeFiles --progress-num=5,6 "Built target crowJourney"
 .PHONY : CMakeFiles/crowJourney.dir/all
 
 # Build rule for subdir invocation for target.
@@ -109,12 +109,12 @@ CMakeFiles/crowJourney.dir/clean:
 CMakeFiles/book_api_server.dir/all: CMakeFiles/crowJourney.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/book_api_server.dir/build.make CMakeFiles/book_api_server.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/book_api_server.dir/build.make CMakeFiles/book_api_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/build/CMakeFiles --progress-num=1,2 "Built target book_api_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/build/CMakeFiles --progress-num=1,2,3,4 "Built target book_api_server"
 .PHONY : CMakeFiles/book_api_server.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/book_api_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/book_api_server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/build/CMakeFiles 0
 .PHONY : CMakeFiles/book_api_server.dir/rule

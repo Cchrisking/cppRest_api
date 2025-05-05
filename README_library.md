@@ -12,32 +12,35 @@ book-api/
 ├── include/
 │   └── book.h
 ├── src/
-│   ├── main.cpp          # Implémentation principale du serveur API
-│   ├── user.cpp          # Fonctionnalité de gestion des utilisateurs
-│   └── lib.cpp           # Fonctionnalités principales de la bibliothèque
+│   ├── controllers        # main api
+│   │   └── UserController.cpp
+│   │   └── LibraryController.cpp
+│   ├── main.cpp          # main api
+│   ├── user.cpp          # main user api
+│   └── library.cpp       # main library api
 └── tests/
     └── test_api.cpp      # Tests de l’API
 ```
 
-## Prérequis
-- Un compilateur C++ prenant en charge C++11 ou supérieur
-- CMake version 3.10 ou plus
-- Les bibliothèques Boost
-- Le framework Crow
-- La bibliothèque nlohmann/json
+## requirements
+-  C++ compiler C++17 or +
+- CMake version 3.10 or +
+- Boost Library
+- framework CrowCPP
+- nlohmann/json
 
 ## Installation
 
-### Sur Linux (Ubuntu/Debian)
+###  Linux (Ubuntu/Debian)
 ```bash
-# Installer les outils de développement nécessaires
+# Tools installations
 sudo apt-get update
 sudo apt-get install -y build-essential cmake libboost-all-dev
 
-# Installer nlohmann/json
+# Install nlohmann/database
 sudo apt-get install -y nlohmann-json3-dev
 
-# Installer Crow (depuis les sources)
+# Install Crow (depuis les sources)
 git clone https://github.com/CrowCpp/Crow.git
 cd Crow
 mkdir build && cd build

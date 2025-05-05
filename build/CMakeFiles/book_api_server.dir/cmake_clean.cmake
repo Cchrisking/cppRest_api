@@ -1,6 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/book_api_server.dir/src/main.cpp.o"
-  "CMakeFiles/book_api_server.dir/src/main.cpp.o.d"
+  "CMakeFiles/book_api_server.dir/src/controllers/LibraryController.cpp.o"
+  "CMakeFiles/book_api_server.dir/src/controllers/LibraryController.cpp.o.d"
+  "CMakeFiles/book_api_server.dir/src/library.cpp.o"
+  "CMakeFiles/book_api_server.dir/src/library.cpp.o.d"
+  "CMakeFiles/book_api_server.dir/src/models/Book.cpp.o"
+  "CMakeFiles/book_api_server.dir/src/models/Book.cpp.o.d"
   "book_api_server"
   "book_api_server.pdb"
 )

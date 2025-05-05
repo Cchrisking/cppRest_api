@@ -544,3 +544,35 @@ events:
       Running the CXX compiler's linker: "/usr/bin/ld" "-v"
       GNU ld (GNU Binutils for Ubuntu) 2.42
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/christou/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/christou/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/home/christou/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/home/christou/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "CMakeLists.txt:19 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Xpdvy5"
+      binary: "/media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Xpdvy5"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Xpdvy5'
+        
+        Run Build Command(s): /home/christou/.local/share/JetBrains/Toolbox/apps/clion/bin/ninja/linux/x64/ninja -v cmTC_15fb9
+        [1/2] /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -fdiagnostics-color=always -o CMakeFiles/cmTC_15fb9.dir/src.c.o -c /media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Xpdvy5/src.c
+        [2/2] : && /usr/bin/cc   CMakeFiles/cmTC_15fb9.dir/src.c.o -o cmTC_15fb9   && :
+        
+      exitCode: 0
+...

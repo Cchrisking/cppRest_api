@@ -1,4 +1,4 @@
-CMakeFiles/book_api_server.dir/src/main.cpp.o: \
+CMakeFiles/rest_app.dir/src/main.cpp.o: \
  /media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/src/main.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/13/iostream \
  /usr/include/c++/13/bits/requires_hosted.h \

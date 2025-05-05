@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/crowJourney.dir/src/library.cpp.o"
-  "CMakeFiles/crowJourney.dir/src/library.cpp.o.d"
+  "CMakeFiles/crowJourney.dir/src/main.cpp.o"
+  "CMakeFiles/crowJourney.dir/src/main.cpp.o.d"
   "libcrowJourney.pdb"
   "libcrowJourney.so"
 )

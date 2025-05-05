@@ -8,7 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/src/main.cpp" "CMakeFiles/book_api_server.dir/src/main.cpp.o" "gcc" "CMakeFiles/book_api_server.dir/src/main.cpp.o.d"
+  "/media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/src/controllers/LibraryController.cpp" "CMakeFiles/book_api_server.dir/src/controllers/LibraryController.cpp.o" "gcc" "CMakeFiles/book_api_server.dir/src/controllers/LibraryController.cpp.o.d"
+  "/media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/src/library.cpp" "CMakeFiles/book_api_server.dir/src/library.cpp.o" "gcc" "CMakeFiles/book_api_server.dir/src/library.cpp.o.d"
+  "/media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/src/models/Book.cpp" "CMakeFiles/book_api_server.dir/src/models/Book.cpp.o" "gcc" "CMakeFiles/book_api_server.dir/src/models/Book.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

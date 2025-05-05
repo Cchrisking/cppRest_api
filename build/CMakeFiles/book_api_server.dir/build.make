@@ -69,33 +69,65 @@ include CMakeFiles/book_api_server.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/book_api_server.dir/flags.make
 
-CMakeFiles/book_api_server.dir/src/main.cpp.o: CMakeFiles/book_api_server.dir/flags.make
-CMakeFiles/book_api_server.dir/src/main.cpp.o: /media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/src/main.cpp
-CMakeFiles/book_api_server.dir/src/main.cpp.o: CMakeFiles/book_api_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/book_api_server.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/book_api_server.dir/src/main.cpp.o -MF CMakeFiles/book_api_server.dir/src/main.cpp.o.d -o CMakeFiles/book_api_server.dir/src/main.cpp.o -c /media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/src/main.cpp
+CMakeFiles/book_api_server.dir/src/library.cpp.o: CMakeFiles/book_api_server.dir/flags.make
+CMakeFiles/book_api_server.dir/src/library.cpp.o: /media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/src/library.cpp
+CMakeFiles/book_api_server.dir/src/library.cpp.o: CMakeFiles/book_api_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/book_api_server.dir/src/library.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/book_api_server.dir/src/library.cpp.o -MF CMakeFiles/book_api_server.dir/src/library.cpp.o.d -o CMakeFiles/book_api_server.dir/src/library.cpp.o -c /media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/src/library.cpp
 
-CMakeFiles/book_api_server.dir/src/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/book_api_server.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/src/main.cpp > CMakeFiles/book_api_server.dir/src/main.cpp.i
+CMakeFiles/book_api_server.dir/src/library.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/book_api_server.dir/src/library.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/src/library.cpp > CMakeFiles/book_api_server.dir/src/library.cpp.i
 
-CMakeFiles/book_api_server.dir/src/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/book_api_server.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/src/main.cpp -o CMakeFiles/book_api_server.dir/src/main.cpp.s
+CMakeFiles/book_api_server.dir/src/library.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/book_api_server.dir/src/library.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/src/library.cpp -o CMakeFiles/book_api_server.dir/src/library.cpp.s
+
+CMakeFiles/book_api_server.dir/src/models/Book.cpp.o: CMakeFiles/book_api_server.dir/flags.make
+CMakeFiles/book_api_server.dir/src/models/Book.cpp.o: /media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/src/models/Book.cpp
+CMakeFiles/book_api_server.dir/src/models/Book.cpp.o: CMakeFiles/book_api_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/book_api_server.dir/src/models/Book.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/book_api_server.dir/src/models/Book.cpp.o -MF CMakeFiles/book_api_server.dir/src/models/Book.cpp.o.d -o CMakeFiles/book_api_server.dir/src/models/Book.cpp.o -c /media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/src/models/Book.cpp
+
+CMakeFiles/book_api_server.dir/src/models/Book.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/book_api_server.dir/src/models/Book.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/src/models/Book.cpp > CMakeFiles/book_api_server.dir/src/models/Book.cpp.i
+
+CMakeFiles/book_api_server.dir/src/models/Book.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/book_api_server.dir/src/models/Book.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/src/models/Book.cpp -o CMakeFiles/book_api_server.dir/src/models/Book.cpp.s
+
+CMakeFiles/book_api_server.dir/src/controllers/LibraryController.cpp.o: CMakeFiles/book_api_server.dir/flags.make
+CMakeFiles/book_api_server.dir/src/controllers/LibraryController.cpp.o: /media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/src/controllers/LibraryController.cpp
+CMakeFiles/book_api_server.dir/src/controllers/LibraryController.cpp.o: CMakeFiles/book_api_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/book_api_server.dir/src/controllers/LibraryController.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/book_api_server.dir/src/controllers/LibraryController.cpp.o -MF CMakeFiles/book_api_server.dir/src/controllers/LibraryController.cpp.o.d -o CMakeFiles/book_api_server.dir/src/controllers/LibraryController.cpp.o -c /media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/src/controllers/LibraryController.cpp
+
+CMakeFiles/book_api_server.dir/src/controllers/LibraryController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/book_api_server.dir/src/controllers/LibraryController.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/src/controllers/LibraryController.cpp > CMakeFiles/book_api_server.dir/src/controllers/LibraryController.cpp.i
+
+CMakeFiles/book_api_server.dir/src/controllers/LibraryController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/book_api_server.dir/src/controllers/LibraryController.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/src/controllers/LibraryController.cpp -o CMakeFiles/book_api_server.dir/src/controllers/LibraryController.cpp.s
 
 # Object files for target book_api_server
 book_api_server_OBJECTS = \
-"CMakeFiles/book_api_server.dir/src/main.cpp.o"
+"CMakeFiles/book_api_server.dir/src/library.cpp.o" \
+"CMakeFiles/book_api_server.dir/src/models/Book.cpp.o" \
+"CMakeFiles/book_api_server.dir/src/controllers/LibraryController.cpp.o"
 
 # External object files for target book_api_server
 book_api_server_EXTERNAL_OBJECTS =
 
-book_api_server: CMakeFiles/book_api_server.dir/src/main.cpp.o
+book_api_server: CMakeFiles/book_api_server.dir/src/library.cpp.o
+book_api_server: CMakeFiles/book_api_server.dir/src/models/Book.cpp.o
+book_api_server: CMakeFiles/book_api_server.dir/src/controllers/LibraryController.cpp.o
 book_api_server: CMakeFiles/book_api_server.dir/build.make
 book_api_server: libcrowJourney.so
 book_api_server: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.83.0
 book_api_server: CMakeFiles/book_api_server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable book_api_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable book_api_server"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/book_api_server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -10,9 +10,9 @@ option(BUILD_SHARED_LIBS "Build using shared libraries" ON)
 
 # Force user to define the target to build
 if(NOT DEFINED TARGET_TO_BUILD)
-    message(FATAL_ERROR "Please specify -DTARGET_TO_BUILD=<target>. Options: book_api_server, user_app, run_tests")
+    #message(FATAL_ERROR "Please specify -DTARGET_TO_BUILD=<target>. Options: book_api_server, user_app, run_tests")
+    message(WARNING "No Build target specified the default main_app will be build, Please specify -DTARGET_TO_BUILD=<target>. Options: book_api_server, user_app, run_tests")
 endif()
-
 # Dependencies
 find_package(Boost REQUIRED COMPONENTS system)
 find_package(Threads REQUIRED)
@@ -34,37 +34,48 @@ find_path(CROW_INCLUDE_DIR crow.h
 if(NOT CROW_INCLUDE_DIR)
     message(FATAL_ERROR "Could not find crow.h")
 endif()
-
 # Include directories
 include_directories(
         ${CMAKE_SOURCE_DIR}/include
         ${CROW_INCLUDE_DIR}
         ${Boost_INCLUDE_DIRS}
 )
-
 # Common library
-add_library(crowJourney src/library.cpp)
+add_library(crowJourney src/main.cpp
+        src/database/datarepo.h)
 target_include_directories(crowJourney PUBLIC ${CMAKE_SOURCE_DIR}/include)
 target_link_libraries(crowJourney ${Boost_LIBRARIES} Threads::Threads)
-
 # Define executable based on TARGET_TO_BUILD
-if(TARGET_TO_BUILD STREQUAL "book_api_server")
-    add_executable(book_api_server src/main.cpp)
+if(TARGET_TO_BUILD STREQUAL "book_server")
+    message(WARNING "Targeting book_server")
+    add_executable(book_api_server src/library.cpp
+            src/models/Book.cpp
+            src/models/Book.h
+            src/controllers/LibraryController.cpp
+            src/controllers/LibraryController.h)
     target_link_libraries(book_api_server crowJourney ${Boost_LIBRARIES} Threads::Threads)
     set(TARGET_BIN book_api_server)
 
 elseif(TARGET_TO_BUILD STREQUAL "user_app")
-    add_executable(user_app src/users.cpp)
+    message(WARNING "Targeting user app")
+    add_executable(user_app src/users.cpp
+            src/models/User.cpp
+            src/models/User.h
+            src/controllers/UserController.cpp
+            src/controllers/UserController.h)
     target_link_libraries(user_app crowJourney ${Boost_LIBRARIES} Threads::Threads)
     set(TARGET_BIN user_app)
 
 elseif(TARGET_TO_BUILD STREQUAL "run_tests")
+    message(WARNING "Targeting test app")
     add_executable(run_tests tests/test_api.cpp)
     target_link_libraries(run_tests crowJourney ${Boost_LIBRARIES} Threads::Threads)
     set(TARGET_BIN run_tests)
-
 else()
-    message(FATAL_ERROR "Unknown TARGET_TO_BUILD: ${TARGET_TO_BUILD}")
+    message(WARNING "Targeting main app no target specified")
+    add_executable(rest_app src/main.cpp)
+    target_link_libraries(rest_app crowJourney ${Boost_LIBRARIES} Threads::Threads)
+    set(TARGET_BIN rest_app)
 endif()
 
 # Windows specific

@@ -1,8 +1,13 @@
 //
 // Created by christou on 4/24/25.
 //
-
-#ifndef LIB_MODEL_H
-#define LIB_MODEL_H
-
-#endif //LIB_MODEL_H
+#pragma once
+#include<string>
+typedef struct{
+    std::string titre;
+    std::string auteur;
+    std::string genre;
+    int annee;
+    double prix;
+    bool diponible;
+}Livre;

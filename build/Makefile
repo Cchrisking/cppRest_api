@@ -187,12 +187,36 @@ book_api_server/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/book_api_server.dir/build.make CMakeFiles/book_api_server.dir/build
 .PHONY : book_api_server/fast
 
+src/controllers/LibraryController.o: src/controllers/LibraryController.cpp.o
+.PHONY : src/controllers/LibraryController.o
+
+# target to build an object file
+src/controllers/LibraryController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/book_api_server.dir/build.make CMakeFiles/book_api_server.dir/src/controllers/LibraryController.cpp.o
+.PHONY : src/controllers/LibraryController.cpp.o
+
+src/controllers/LibraryController.i: src/controllers/LibraryController.cpp.i
+.PHONY : src/controllers/LibraryController.i
+
+# target to preprocess a source file
+src/controllers/LibraryController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/book_api_server.dir/build.make CMakeFiles/book_api_server.dir/src/controllers/LibraryController.cpp.i
+.PHONY : src/controllers/LibraryController.cpp.i
+
+src/controllers/LibraryController.s: src/controllers/LibraryController.cpp.s
+.PHONY : src/controllers/LibraryController.s
+
+# target to generate assembly for a file
+src/controllers/LibraryController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/book_api_server.dir/build.make CMakeFiles/book_api_server.dir/src/controllers/LibraryController.cpp.s
+.PHONY : src/controllers/LibraryController.cpp.s
+
 src/library.o: src/library.cpp.o
 .PHONY : src/library.o
 
 # target to build an object file
 src/library.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/crowJourney.dir/build.make CMakeFiles/crowJourney.dir/src/library.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/book_api_server.dir/build.make CMakeFiles/book_api_server.dir/src/library.cpp.o
 .PHONY : src/library.cpp.o
 
 src/library.i: src/library.cpp.i
@@ -200,7 +224,7 @@ src/library.i: src/library.cpp.i
 
 # target to preprocess a source file
 src/library.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/crowJourney.dir/build.make CMakeFiles/crowJourney.dir/src/library.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/book_api_server.dir/build.make CMakeFiles/book_api_server.dir/src/library.cpp.i
 .PHONY : src/library.cpp.i
 
 src/library.s: src/library.cpp.s
@@ -208,7 +232,7 @@ src/library.s: src/library.cpp.s
 
 # target to generate assembly for a file
 src/library.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/crowJourney.dir/build.make CMakeFiles/crowJourney.dir/src/library.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/book_api_server.dir/build.make CMakeFiles/book_api_server.dir/src/library.cpp.s
 .PHONY : src/library.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -216,7 +240,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/book_api_server.dir/build.make CMakeFiles/book_api_server.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/crowJourney.dir/build.make CMakeFiles/crowJourney.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -224,7 +248,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/book_api_server.dir/build.make CMakeFiles/book_api_server.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/crowJourney.dir/build.make CMakeFiles/crowJourney.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -232,8 +256,32 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/book_api_server.dir/build.make CMakeFiles/book_api_server.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/crowJourney.dir/build.make CMakeFiles/crowJourney.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+src/models/Book.o: src/models/Book.cpp.o
+.PHONY : src/models/Book.o
+
+# target to build an object file
+src/models/Book.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/book_api_server.dir/build.make CMakeFiles/book_api_server.dir/src/models/Book.cpp.o
+.PHONY : src/models/Book.cpp.o
+
+src/models/Book.i: src/models/Book.cpp.i
+.PHONY : src/models/Book.i
+
+# target to preprocess a source file
+src/models/Book.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/book_api_server.dir/build.make CMakeFiles/book_api_server.dir/src/models/Book.cpp.i
+.PHONY : src/models/Book.cpp.i
+
+src/models/Book.s: src/models/Book.cpp.s
+.PHONY : src/models/Book.s
+
+# target to generate assembly for a file
+src/models/Book.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/book_api_server.dir/build.make CMakeFiles/book_api_server.dir/src/models/Book.cpp.s
+.PHONY : src/models/Book.cpp.s
 
 # Help Target
 help:
@@ -249,12 +297,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... book_api_server"
 	@echo "... crowJourney"
+	@echo "... src/controllers/LibraryController.o"
+	@echo "... src/controllers/LibraryController.i"
+	@echo "... src/controllers/LibraryController.s"
 	@echo "... src/library.o"
 	@echo "... src/library.i"
 	@echo "... src/library.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/models/Book.o"
+	@echo "... src/models/Book.i"
+	@echo "... src/models/Book.s"
 .PHONY : help
 
 
