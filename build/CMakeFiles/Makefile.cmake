@@ -64,6 +64,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/crowJourney.dir/DependInfo.cmake"
-  "CMakeFiles/book_api_server.dir/DependInfo.cmake"
+  "CMakeFiles/user_app.dir/DependInfo.cmake"
   )

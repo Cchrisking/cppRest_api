@@ -5,7 +5,7 @@ const Footer = () => {
 
     return (
         <footer className="footer">
-            <p>&copy; {currentYear}  REST API Management.</p>
+            <p>&copy; {currentYear}  REST API Management .</p>
         </footer>
     )
 }

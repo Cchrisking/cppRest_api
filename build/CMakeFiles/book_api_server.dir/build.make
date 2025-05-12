@@ -124,7 +124,6 @@ book_api_server: CMakeFiles/book_api_server.dir/src/library.cpp.o
 book_api_server: CMakeFiles/book_api_server.dir/src/models/Book.cpp.o
 book_api_server: CMakeFiles/book_api_server.dir/src/controllers/LibraryController.cpp.o
 book_api_server: CMakeFiles/book_api_server.dir/build.make
-book_api_server: libcrowJourney.so
 book_api_server: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.83.0
 book_api_server: CMakeFiles/book_api_server.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable book_api_server"

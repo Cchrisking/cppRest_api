@@ -5,7 +5,6 @@ const Menu = ({ activeSection, onMenuClick }) => {
         { id: 'books', label: 'Books' },
         { id: 'users', label: 'Users' }
     ]
-
     return (
         <nav className="nav-menu">
             <ul className="menu-items">

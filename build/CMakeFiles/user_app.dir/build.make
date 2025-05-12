@@ -124,7 +124,6 @@ user_app: CMakeFiles/user_app.dir/src/users.cpp.o
 user_app: CMakeFiles/user_app.dir/src/models/User.cpp.o
 user_app: CMakeFiles/user_app.dir/src/controllers/UserController.cpp.o
 user_app: CMakeFiles/user_app.dir/build.make
-user_app: libcrowJourney.so
 user_app: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.83.0
 user_app: CMakeFiles/user_app.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable user_app"

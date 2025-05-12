@@ -17,6 +17,9 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
+.container{
+  grid-column: 3 / span 8;
+}
 
 /* Header styles */
 .header {

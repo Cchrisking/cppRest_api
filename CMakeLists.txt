@@ -8,11 +8,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # Option for shared libs
 option(BUILD_SHARED_LIBS "Build using shared libraries" ON)
 
-# Force user to define the target to build
-if(NOT DEFINED TARGET_TO_BUILD)
-    #message(FATAL_ERROR "Please specify -DTARGET_TO_BUILD=<target>. Options: book_api_server, user_app, run_tests")
-    message(WARNING "No Build target specified the default main_app will be build, Please specify -DTARGET_TO_BUILD=<target>. Options: book_api_server, user_app, run_tests")
-endif()
 # Dependencies
 find_package(Boost REQUIRED COMPONENTS system)
 find_package(Threads REQUIRED)
@@ -40,11 +35,6 @@ include_directories(
         ${CROW_INCLUDE_DIR}
         ${Boost_INCLUDE_DIRS}
 )
-# Common library
-add_library(crowJourney src/main.cpp
-        src/database/datarepo.h)
-target_include_directories(crowJourney PUBLIC ${CMAKE_SOURCE_DIR}/include)
-target_link_libraries(crowJourney ${Boost_LIBRARIES} Threads::Threads)
 # Define executable based on TARGET_TO_BUILD
 if(TARGET_TO_BUILD STREQUAL "book_server")
     message(WARNING "Targeting book_server")
@@ -52,8 +42,9 @@ if(TARGET_TO_BUILD STREQUAL "book_server")
             src/models/Book.cpp
             src/models/Book.h
             src/controllers/LibraryController.cpp
-            src/controllers/LibraryController.h)
-    target_link_libraries(book_api_server crowJourney ${Boost_LIBRARIES} Threads::Threads)
+            src/controllers/LibraryController.h
+            src/utils/utils.h)
+    target_link_libraries(book_api_server ${Boost_LIBRARIES} Threads::Threads)
     set(TARGET_BIN book_api_server)
 
 elseif(TARGET_TO_BUILD STREQUAL "user_app")
@@ -62,27 +53,28 @@ elseif(TARGET_TO_BUILD STREQUAL "user_app")
             src/models/User.cpp
             src/models/User.h
             src/controllers/UserController.cpp
-            src/controllers/UserController.h)
-    target_link_libraries(user_app crowJourney ${Boost_LIBRARIES} Threads::Threads)
+            src/controllers/UserController.h
+            src/utils/utils.h)
+    target_link_libraries(user_app ${Boost_LIBRARIES} Threads::Threads)
     set(TARGET_BIN user_app)
 
 elseif(TARGET_TO_BUILD STREQUAL "run_tests")
     message(WARNING "Targeting test app")
-    add_executable(run_tests tests/test_api.cpp)
-    target_link_libraries(run_tests crowJourney ${Boost_LIBRARIES} Threads::Threads)
+    add_executable(run_tests tests/test_api.cpp
+            src/utils/utils.h)
+    target_link_libraries(run_tests ${Boost_LIBRARIES} Threads::Threads)
     set(TARGET_BIN run_tests)
 else()
     message(WARNING "Targeting main app no target specified")
-    add_executable(rest_app src/main.cpp)
-    target_link_libraries(rest_app crowJourney ${Boost_LIBRARIES} Threads::Threads)
+    add_executable(rest_app src/main.cpp
+            src/utils/utils.h)
+    target_link_libraries(rest_app ${Boost_LIBRARIES} Threads::Threads)
     set(TARGET_BIN rest_app)
 endif()
 
 # Windows specific
 if(WIN32)
     target_compile_definitions(${TARGET_BIN} PRIVATE -D_WIN32_WINNT=0x0601)
-    target_compile_definitions(crowJourney PRIVATE -D_WIN32_WINNT=0x0601)
-
     add_compile_options(/wd4996)  # Disable deprecated warnings
 
     # Set output directory
@@ -97,11 +89,6 @@ install(TARGETS ${TARGET_BIN}
         RUNTIME DESTINATION bin
         LIBRARY DESTINATION lib
         ARCHIVE DESTINATION lib
-)
-
-install(DIRECTORY ${CMAKE_SOURCE_DIR}/include/
-        DESTINATION include/crowJourney
-        FILES_MATCHING PATTERN "*.h"
 )
 
 # Info

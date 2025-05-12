@@ -162,126 +162,89 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named crowJourney
+# Target rules for targets named user_app
 
 # Build rule for target.
-crowJourney: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 crowJourney
-.PHONY : crowJourney
+user_app: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 user_app
+.PHONY : user_app
 
 # fast build rule for target.
-crowJourney/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/crowJourney.dir/build.make CMakeFiles/crowJourney.dir/build
-.PHONY : crowJourney/fast
+user_app/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/user_app.dir/build.make CMakeFiles/user_app.dir/build
+.PHONY : user_app/fast
 
-#=============================================================================
-# Target rules for targets named book_api_server
-
-# Build rule for target.
-book_api_server: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 book_api_server
-.PHONY : book_api_server
-
-# fast build rule for target.
-book_api_server/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/book_api_server.dir/build.make CMakeFiles/book_api_server.dir/build
-.PHONY : book_api_server/fast
-
-src/controllers/LibraryController.o: src/controllers/LibraryController.cpp.o
-.PHONY : src/controllers/LibraryController.o
+src/controllers/UserController.o: src/controllers/UserController.cpp.o
+.PHONY : src/controllers/UserController.o
 
 # target to build an object file
-src/controllers/LibraryController.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/book_api_server.dir/build.make CMakeFiles/book_api_server.dir/src/controllers/LibraryController.cpp.o
-.PHONY : src/controllers/LibraryController.cpp.o
+src/controllers/UserController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/user_app.dir/build.make CMakeFiles/user_app.dir/src/controllers/UserController.cpp.o
+.PHONY : src/controllers/UserController.cpp.o
 
-src/controllers/LibraryController.i: src/controllers/LibraryController.cpp.i
-.PHONY : src/controllers/LibraryController.i
+src/controllers/UserController.i: src/controllers/UserController.cpp.i
+.PHONY : src/controllers/UserController.i
 
 # target to preprocess a source file
-src/controllers/LibraryController.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/book_api_server.dir/build.make CMakeFiles/book_api_server.dir/src/controllers/LibraryController.cpp.i
-.PHONY : src/controllers/LibraryController.cpp.i
+src/controllers/UserController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/user_app.dir/build.make CMakeFiles/user_app.dir/src/controllers/UserController.cpp.i
+.PHONY : src/controllers/UserController.cpp.i
 
-src/controllers/LibraryController.s: src/controllers/LibraryController.cpp.s
-.PHONY : src/controllers/LibraryController.s
+src/controllers/UserController.s: src/controllers/UserController.cpp.s
+.PHONY : src/controllers/UserController.s
 
 # target to generate assembly for a file
-src/controllers/LibraryController.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/book_api_server.dir/build.make CMakeFiles/book_api_server.dir/src/controllers/LibraryController.cpp.s
-.PHONY : src/controllers/LibraryController.cpp.s
+src/controllers/UserController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/user_app.dir/build.make CMakeFiles/user_app.dir/src/controllers/UserController.cpp.s
+.PHONY : src/controllers/UserController.cpp.s
 
-src/library.o: src/library.cpp.o
-.PHONY : src/library.o
+src/models/User.o: src/models/User.cpp.o
+.PHONY : src/models/User.o
 
 # target to build an object file
-src/library.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/book_api_server.dir/build.make CMakeFiles/book_api_server.dir/src/library.cpp.o
-.PHONY : src/library.cpp.o
+src/models/User.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/user_app.dir/build.make CMakeFiles/user_app.dir/src/models/User.cpp.o
+.PHONY : src/models/User.cpp.o
 
-src/library.i: src/library.cpp.i
-.PHONY : src/library.i
+src/models/User.i: src/models/User.cpp.i
+.PHONY : src/models/User.i
 
 # target to preprocess a source file
-src/library.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/book_api_server.dir/build.make CMakeFiles/book_api_server.dir/src/library.cpp.i
-.PHONY : src/library.cpp.i
+src/models/User.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/user_app.dir/build.make CMakeFiles/user_app.dir/src/models/User.cpp.i
+.PHONY : src/models/User.cpp.i
 
-src/library.s: src/library.cpp.s
-.PHONY : src/library.s
+src/models/User.s: src/models/User.cpp.s
+.PHONY : src/models/User.s
 
 # target to generate assembly for a file
-src/library.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/book_api_server.dir/build.make CMakeFiles/book_api_server.dir/src/library.cpp.s
-.PHONY : src/library.cpp.s
+src/models/User.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/user_app.dir/build.make CMakeFiles/user_app.dir/src/models/User.cpp.s
+.PHONY : src/models/User.cpp.s
 
-src/main.o: src/main.cpp.o
-.PHONY : src/main.o
+src/users.o: src/users.cpp.o
+.PHONY : src/users.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/crowJourney.dir/build.make CMakeFiles/crowJourney.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+src/users.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/user_app.dir/build.make CMakeFiles/user_app.dir/src/users.cpp.o
+.PHONY : src/users.cpp.o
 
-src/main.i: src/main.cpp.i
-.PHONY : src/main.i
-
-# target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/crowJourney.dir/build.make CMakeFiles/crowJourney.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
-
-src/main.s: src/main.cpp.s
-.PHONY : src/main.s
-
-# target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/crowJourney.dir/build.make CMakeFiles/crowJourney.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
-
-src/models/Book.o: src/models/Book.cpp.o
-.PHONY : src/models/Book.o
-
-# target to build an object file
-src/models/Book.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/book_api_server.dir/build.make CMakeFiles/book_api_server.dir/src/models/Book.cpp.o
-.PHONY : src/models/Book.cpp.o
-
-src/models/Book.i: src/models/Book.cpp.i
-.PHONY : src/models/Book.i
+src/users.i: src/users.cpp.i
+.PHONY : src/users.i
 
 # target to preprocess a source file
-src/models/Book.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/book_api_server.dir/build.make CMakeFiles/book_api_server.dir/src/models/Book.cpp.i
-.PHONY : src/models/Book.cpp.i
+src/users.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/user_app.dir/build.make CMakeFiles/user_app.dir/src/users.cpp.i
+.PHONY : src/users.cpp.i
 
-src/models/Book.s: src/models/Book.cpp.s
-.PHONY : src/models/Book.s
+src/users.s: src/users.cpp.s
+.PHONY : src/users.s
 
 # target to generate assembly for a file
-src/models/Book.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/book_api_server.dir/build.make CMakeFiles/book_api_server.dir/src/models/Book.cpp.s
-.PHONY : src/models/Book.cpp.s
+src/users.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/user_app.dir/build.make CMakeFiles/user_app.dir/src/users.cpp.s
+.PHONY : src/users.cpp.s
 
 # Help Target
 help:
@@ -295,20 +258,16 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... book_api_server"
-	@echo "... crowJourney"
-	@echo "... src/controllers/LibraryController.o"
-	@echo "... src/controllers/LibraryController.i"
-	@echo "... src/controllers/LibraryController.s"
-	@echo "... src/library.o"
-	@echo "... src/library.i"
-	@echo "... src/library.s"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
-	@echo "... src/models/Book.o"
-	@echo "... src/models/Book.i"
-	@echo "... src/models/Book.s"
+	@echo "... user_app"
+	@echo "... src/controllers/UserController.o"
+	@echo "... src/controllers/UserController.i"
+	@echo "... src/controllers/UserController.s"
+	@echo "... src/models/User.o"
+	@echo "... src/models/User.i"
+	@echo "... src/models/User.s"
+	@echo "... src/users.o"
+	@echo "... src/users.i"
+	@echo "... src/users.s"
 .PHONY : help
 
 
