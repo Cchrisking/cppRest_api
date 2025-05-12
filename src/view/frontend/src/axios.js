@@ -1,4 +1,4 @@
-// In a new file like src/api/axios.js
+// In src/api/axios.js
 import axios from 'axios';
 
 const userApi = axios.create({
@@ -6,16 +6,16 @@ const userApi = axios.create({
     headers: {
         'Content-Type': 'application/json',
     },
-    // Below are options that might help with CORS
     withCredentials: false,
 });
+
 const libraryApi = axios.create({
     baseURL: 'http://localhost:8080',
     headers: {
         'Content-Type': 'application/json',
     },
-    // Below are options that might help with CORS
     withCredentials: false,
 });
 
-export default {userApi,libraryApi};
+// Export both instances as named exports
+export default { userApi, libraryApi };

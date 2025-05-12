@@ -11,7 +11,9 @@
 		"commands" : 
 		[
 			"add_executable",
-			"target_link_libraries"
+			"install",
+			"target_link_libraries",
+			"include_directories"
 		],
 		"files" : 
 		[
@@ -25,13 +27,25 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 32,
+				"line" : 69,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 34,
+				"line" : 88,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 71,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 33,
 				"parent" : 0
 			}
 		]
@@ -42,10 +56,36 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -fdiagnostics-color=always"
+					"fragment" : "-g -std=gnu++23 -fdiagnostics-color=always"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 3,
+					"define" : "BOOST_SYSTEM_DYN_LINK"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "BOOST_SYSTEM_NO_LIB"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "/media/christou/3048C07648C03C7A1/confidential/mcverse/projects/crowJourney/include"
 				}
 			],
 			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "23"
+			},
 			"sourceIndexes" : 
 			[
 				0
@@ -53,6 +93,20 @@
 		}
 	],
 	"id" : "rest_app::@6890427a1f51a3e7e1df",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 2,
+				"path" : "bin"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/usr/local"
+		}
+	},
 	"link" : 
 	{
 		"commandFragments" : 
@@ -62,12 +116,12 @@
 				"role" : "flags"
 			},
 			{
-				"fragment" : "-rdynamic",
+				"fragment" : "",
 				"role" : "flags"
 			},
 			{
-				"backtrace" : 2,
-				"fragment" : "-lThreads::Threads",
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libboost_system.so.1.83.0",
 				"role" : "libraries"
 			}
 		],

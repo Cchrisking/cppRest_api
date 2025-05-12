@@ -16,16 +16,13 @@ function App() {
     const [loading, setLoading] = useState(false)
     const [error, setError] = useState(null)
 
-    // API Base URLs
-    const BOOK_API_URL = 'http://localhost:8080/books'
-    const USER_API_URL = 'http://localhost:9080/users'
 
     // Fetch books from API
     const fetchBooks = async () => {
         setLoading(true)
         try {
             const response = await api.libraryApi.get('/books')
-            setUsers(response.data);
+            setBooks(response.data);
             setError(null);
         } catch (err) {
             console.error('Error fetching users:', err)
@@ -52,18 +49,18 @@ function App() {
     const addBook= async (book) => {
         try {
             console.log('Sending user data:', user);
-            const response = await api.userApi().post('/users', book);
+            const response = await api.libraryApi.post('/books', book);
             console.log('User added successfully:', response.data);
             fetchBooks(); // Refresh the user list
         } catch (err) {
             console.error('Error details:', err.response || err);
-            setError(`Failed to add user: ${err.message}`);
+            setError(`Failed to add book: ${err.message}`);
         }
     };
     // Delete book
     const deleteBook = async (id) => {
         try {
-            await api.userApi().delete(`/books/${id}`);
+            await api.libraryApi.delete(`/books/${id}`);
             fetchBooks(); // Refresh the user list
         } catch (err) {
             console.error('Error deleting user:', err);
@@ -75,7 +72,7 @@ function App() {
     const addUser = async (user) => {
         try {
             console.log('Sending user data:', user);
-            const response = await api.userApi().post('/users', user);
+            const response = await api.userApi.post('/users', user);
             console.log('User added successfully:', response.data);
             fetchUsers(); // Refresh the user list
         } catch (err) {
@@ -86,7 +83,7 @@ function App() {
     // Delete user
     const deleteUser = async (id) => {
         try {
-            await api.userApi().delete(`/users/${id}`);
+            await api.userApi.delete(`/users/${id}`);
             fetchUsers(); // Refresh the user list
         } catch (err) {
             console.error('Error deleting user:', err);

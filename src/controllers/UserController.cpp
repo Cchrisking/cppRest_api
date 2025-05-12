@@ -132,9 +132,9 @@ crow::response UserController::delete_user(int id) {
     }
     users.erase(it);
     // Return success with no content
+    std::cout << "Received DELETE  request to /users with body: "<< std::endl;
     response.code = 204;
     response.body = "Deleted user not found";
-    std::cout << "Received DELETE  request to /users with body: "<< std::endl;
     std::cout<<response.code<<" "<<response.body<<std::endl;
     return response;
 }
@@ -143,13 +143,12 @@ void UserController::register_routes(crow::SimpleApp& app) {
     CROW_ROUTE(app, "/users")
         .methods(crow::HTTPMethod::OPTIONS)
         ([this](const crow::request& req) {
+            std::cout << "Received OPTIONS for /users"<< std::endl;
             crow::response response;
             response.add_header("Access-Control-Allow-Origin", "*");
             response.add_header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
             response.add_header("Access-Control-Allow-Headers", "Content-Type");
             response.code = 204;  // No content for OPTIONS
-            response.body = "Register routes option no content for option";
-            std::cout << "Received OPTIONS request for path: " << req.url << std::endl;
             return response;
         });
     CROW_ROUTE(app, "/users")
@@ -169,12 +168,11 @@ void UserController::register_routes(crow::SimpleApp& app) {
         .methods(crow::HTTPMethod::OPTIONS)
         ([this](int id) {
             crow::response response;
+            std::cout << "Received OPTIONS/users/id"<< std::endl;
             response.add_header("Access-Control-Allow-Origin", "*");
             response.add_header("Access-Control-Allow-Methods", "GET, PUT, DELETE, OPTIONS");
             response.add_header("Access-Control-Allow-Headers", "Content-Type");
             response.code = 204;  // No content for OPTIONS
-            response.body = "Register routes option specific ID no no content for option";
-             std::cout << "Received OPTIONS request for path: " <<id << std::endl;
             return response;
         });
     CROW_ROUTE(app, "/users/<int>")
