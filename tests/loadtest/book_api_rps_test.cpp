@@ -2,7 +2,6 @@
 // Created by christou on 5/15/25.
 //
 
-#include "test_book.h"
 #include <iostream>
 #include <vector>
 #include <thread>
@@ -144,7 +143,7 @@ private:
         } else {
             stats.failed_requests++;
             if (config.verbose) {
-                std::cout << method << " " << endpoint << " - FAILED: "
+                std::cout << method << " " << endpoint << " - Echoué: "
                          << curl_easy_strerror(res) << std::endl;
             }
         }
@@ -236,15 +235,15 @@ public:
     }
 
     void report_results() {
-        std::cout << "\n\n=== Final Results ===" << std::endl;
+        std::cout << "\n\n=== Résultat final ===" << std::endl;
         std::cout << "Total Requests: " << stats.total_requests << std::endl;
         std::cout << "Successful: " << stats.successful_requests << std::endl;
         std::cout << "Failed: " << stats.failed_requests << std::endl;
 
         if (stats.successful_requests > 0) {
             auto avg_latency = stats.total_latency_ms.load() / stats.successful_requests.load();
-            std::cout << "\nLatency Statistics:" << std::endl;
-            std::cout << "  Average: " << avg_latency << "ms" << std::endl;
+            std::cout << "\nLatence Statistique:" << std::endl;
+            std::cout << "  Moyenne: " << avg_latency << "ms" << std::endl;
             std::cout << "  Min: " << stats.min_latency_ms << "ms" << std::endl;
             std::cout << "  Max: " << stats.max_latency_ms << "ms" << std::endl;
 
@@ -261,14 +260,14 @@ public:
                 std::cout << "  P99: " << p99 << "ms" << std::endl;
             }
 
-            std::cout << "\nStatus Code Distribution:" << std::endl;
+            std::cout << "\nDistribution de code de status:" << std::endl;
             for (const auto& [code, count] : stats.status_codes) {
                 std::cout << "  " << code << ": " << count << std::endl;
             }
         }
 
         auto actual_rps = stats.total_requests.load() / config.duration_seconds;
-        std::cout << "\nActual RPS: " << actual_rps << std::endl;
+        std::cout << "\n RPS actual: " << actual_rps << std::endl;
     }
 };
 
